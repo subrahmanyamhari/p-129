@@ -17,3 +17,6 @@ print(df1.info())
 print(df1.dtypes)
 
 df1.to_csv("final_data.csv")
+
+df1["gravity"] = 6.6*10**-11 * df1["mass"]/df1["radius"]**2
+print(df1)
